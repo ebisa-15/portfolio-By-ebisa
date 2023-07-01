@@ -1,0 +1,444 @@
+@import url('https://fonts.googleappis.com/css2?family=poppins:wgh@300;400;500;;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
+}
+:root{
+    background-color: aqua;
+    color: #fff;
+}
+html{
+    font-size: 50;
+    overflow-x: hidden;
+
+}
+body{
+    background-color: blueviolet;
+    color: gold;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+
+}
+.header.sticky {
+    border-bottom: 1rem solid b;
+
+}
+.logo{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 100;
+    cursor: default; 
+}
+.navbar a{
+    font-size: 1rem;
+    color: azure;
+    margin-left: 4rem;
+transition: 1s;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: red;
+}
+#menu-icon{
+    font-size: 1rem;
+    color: var(---text-color);
+    display: none;
+}
+#menu{
+    font-size: 2rem;
+    color: red;
+    display: flex;
+    transition: 2s ease;
+
+}
+.Home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home-img img{
+   width: 20vw;
+    height: 30vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+.Home-content.home-img:hover{
+    font-size: 2rem;
+    color: green;
+    background-color: goldenrod;
+
+}
+.Home-content.Home-content h3{
+    
+    animation: floatText 4s ease-in-out infinite;
+}
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY();
+    }
+}
+
+
+.Home-content h3{
+    font-size: 3rem;
+    font-weight: 500;
+
+
+}
+.Home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+
+}
+span{
+    color: blue;
+
+
+}
+.Home-content h1{
+    display: inline-block;
+    background:red;
+    color:yellowgreen;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3;
+    background:green;
+    transition: 0.5s ease;
+
+    
+}
+span{
+    display: inline;
+    color: blue;
+    font-size: 2rem;
+    width: 30%;
+margin: 0rem;
+}
+
+.Home-content h1:hover{
+    background:red;
+    color:yellowgreen;
+    box-shadow:crimson  cornflowerblue;
+
+}
+
+.Home-content p{
+    font-size: 1rem;
+    margin: 2rem;
+}
+ 
+.social-media a{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 12rem;
+    background: transparent;
+    border: 0.5rem solid gainsboro;
+    border-radius: 50%;
+    box-sizing: 2rem;
+    color: wheat;
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: 0.5s ease;
+
+
+
+}
+.social-media a :hover {
+    background:red;
+    color:yellowgreen;
+    box-shadow: 1rem 3rem 3rem 3rem;
+
+}
+.dell{
+    display: inline-block;
+    padding: 0.5rem ;
+    margin: 3rem;
+    background:green;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem;
+    font-size: 1rem;
+    color:red;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+    transition: 1s ease;
+
+}
+.dell:hover {
+    box-shadow: 2rem;
+    background:red;
+    color:yellowgreen;
+}
+#click{
+    background-color: aqua;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 2rem;
+    transition: 2s ease;
+}
+
+.About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--main-color);
+}
+.about-img img {
+    width: 20vw;
+}
+.heading {
+    text-align: center;
+    font-size: 3rem;
+
+}
+.About-content h2 {
+    text-align: left;
+    line-height: 2rem;
+
+}
+.About-content h3{
+    font-size: 1.6rem;
+}
+.About-content p{
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+.Portfolio{
+    background: green;
+    
+}
+
+.Portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap:0rem;
+    padding: 0%;
+margin: 0%;
+}
+.Portfolio-container .Portfolio-box{
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    overflow:hidden;
+    display: flex;
+    margin-top: 2re;
+    padding: 0.5rem;
+     margin-bottom:0.5rem ;
+    
+}
+ 
+ 
+.Portfolio-box :hover img{
+    transform: scale(1.1);
+}
+.Portfolio-box .Portfolio-layer{
+    position: absolute;
+    bottom:  0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0rem 0rem;
+
+
+
+}
+  .Portfolio-layer p{
+    font-size:0.5rem;
+    margin: 0rem;
+    display: none;
+    transition: 2s ease;
+    text-align: center;
+    
+
+
+  }
+  
+  .Portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: #fff;
+    border-radius: 30%;
+ }
+ .Portfolio-layer a i{
+    font-size: 1rem;
+    color: aqua;
+}
+
+
+ .Contact h2{
+    margin-bottom: 3rem;
+
+ }
+ .Contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+
+ }
+ .Contact form .input-box{
+    display:block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+ }
+ .Contact form .input-box input,
+ .Contact form textarea{
+    width: 100;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: gold;
+    background:palegreen;
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+    
+ }
+ .Contact form .input-box input{
+    width: 30%;
+ }
+ #area{
+    font-size: 1rem;
+    width: 40%;
+
+
+ }
+ .Contact form textarea{
+    resize: both;
+    font-size: 1.6rem;
+
+ }
+ .Contact form .dell{
+    margin-top: 2rem;
+    cursor: pointer;
+
+ }
+ .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    
+
+ }
+ .footer-text{
+    font-size: 1.6rem;
+    
+ }
+
+.footer-iconsTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    background: powderblue;
+    border-radius: 0.8rem;
+    transition: 5s ease;
+
+
+}
+.footer-iconsTop a:hover{ 
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.footer-iconsTop a i{
+    font-size: 0.8rem;
+    color: olivedrab;
+    
+
+}
+
+ /* --------------css for small screens */
+ @media only screen and (max-width:600px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:991px){
+    .header{
+        padding: 2rem 3%;
+    }
+
+    section{
+        padding:10rem 3% 2rem ;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+
+ }
+ @media(max-width:768px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        padding:1rem 3% ;
+        background: purple;
+        border-top: 0.1rem solid green;
+        box-shadow: 0 0.5rem 1rem blue;
+        display: flex;
+
+}
+.navbar a {	
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+
+
+}
+.Home{
+     flex-direction: column;
+
+}
+.Home-content h3{
+    font-size: 2rem;
+}
+.Home-content h1{
+    font-size: 4rem;
+
+}
+    .home-img img {
+        font-size: 2rem;
+    }
+}
